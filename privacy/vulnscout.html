@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — VulnScout · Loogical</title>
+    <meta name="description" content="Privacy policy for VulnScout, the Android CVE vulnerability tracker by Loogical." />
+    <link rel="canonical" href="https://loogical.github.io/privacy/vulnscout" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+        .privacy-hero {
+            padding: 140px 24px 60px;
+            text-align: center;
+        }
+
+        .privacy-body {
+            padding: 0 24px 100px;
+            flex: 1;
+        }
+
+        .privacy-container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 999px;
+            padding: 6px 16px 6px 10px;
+            margin-bottom: 24px;
+        }
+
+        .app-badge-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-cyan);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0.4; }
+        }
+
+        .app-badge-text {
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--accent-cyan);
+            font-family: var(--font-mono);
+        }
+
+        .policy-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin-bottom: 16px;
+        }
+
+        .policy-card h2 {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent-cyan);
+            font-family: var(--font-mono);
+            margin-bottom: 12px;
+        }
+
+        .policy-card p,
+        .policy-card li {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+        }
+
+        .policy-card ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .policy-card li {
+            margin-bottom: 6px;
+        }
+
+        .policy-card code {
+            font-family: var(--font-mono);
+            font-size: 0.85em;
+            color: var(--accent-cyan);
+            background: rgba(56, 189, 248, 0.08);
+            padding: 1px 6px;
+            border-radius: 4px;
+        }
+
+        .meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 28px;
+            margin-bottom: 32px;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .meta-label {
+            font-size: 0.7rem;
+            font-family: var(--font-mono);
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .meta-value {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+            margin-bottom: 32px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-muted);
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .breadcrumb-sep {
+            opacity: 0.4;
+        }
+
+        .breadcrumb-current {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 600px) {
+            .policy-card {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="../logo.png" alt="Loogical logo" class="nav-logo-img" />
+                <span class="nav-logo-text">Loogical</span>
+            </a>
+            <a href="mailto:info@loogical.com" class="nav-contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="privacy-hero">
+        <div class="app-badge">
+            <span class="app-badge-dot"></span>
+            <span class="app-badge-text">Android App</span>
+        </div>
+        <h1 class="section-title">VulnScout<br>Privacy Policy</h1>
+        <p class="hero-subtitle" style="max-width:480px; margin: 0 auto;">
+            VulnScout does not collect, transmit, or share any personal data.
+            Everything stays on your device.
+        </p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="privacy-body">
+        <div class="privacy-container">
+
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="/privacy.html">Privacy Policies</a>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">VulnScout</span>
+            </nav>
+
+            <!-- Meta bar -->
+            <div class="meta-bar">
+                <div class="meta-item">
+                    <span class="meta-label">Application</span>
+                    <span class="meta-value">VulnScout</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Platform</span>
+                    <span class="meta-value">Android</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Developer</span>
+                    <span class="meta-value">Loogical</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Effective date</span>
+                    <span class="meta-value">February 2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Version</span>
+                    <span class="meta-value">1.0</span>
+                </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="policy-card">
+                <h2>Overview</h2>
+                <p>VulnScout is an Android application for searching and tracking CVE vulnerabilities
+                    from the National Vulnerability Database (NVD). This Privacy Policy explains how
+                    the application handles your information.</p>
+            </div>
+
+            <!-- Data Collection -->
+            <div class="policy-card">
+                <h2>Data Collection</h2>
+                <p>VulnScout <strong>does not collect, store, or transmit any personal data</strong>
+                    from users. Specifically:</p>
+                <ul>
+                    <li>No account or login is required.</li>
+                    <li>No user identifiers, analytics, or tracking are used.</li>
+                    <li>No advertising SDKs are included.</li>
+                    <li>No crash reports or telemetry are sent to external services.</li>
+                </ul>
+            </div>
+
+            <!-- Data Stored on Device -->
+            <div class="policy-card">
+                <h2>Data Stored on Your Device</h2>
+                <p>All data generated by VulnScout is stored exclusively on your device:</p>
+                <ul>
+                    <li>The local copy of the NVD vulnerability database (downloaded from NIST).</li>
+                    <li>Application configuration (sync frequency, API key if provided, notification
+                        preferences).</li>
+                </ul>
+                <p style="margin-top: 12px;">This data never leaves your device and is permanently
+                    deleted when you uninstall the application.</p>
+            </div>
+
+            <!-- Network Communication -->
+            <div class="policy-card">
+                <h2>External Network Communication</h2>
+                <p>VulnScout connects exclusively to the following official endpoint:</p>
+                <ul>
+                    <li><strong>NVD API (NIST)</strong> — <code>services.nvd.nist.gov</code> — to
+                        download vulnerability data. All communication is encrypted via HTTPS.</li>
+                </ul>
+                <p style="margin-top: 12px;">No user data is sent in any of these requests. Only
+                    standard technical parameters (date ranges, pagination filters) are included in
+                    API calls.</p>
+            </div>
+
+            <!-- API Key -->
+            <div class="policy-card">
+                <h2>NVD API Key (Optional)</h2>
+                <p>Users may optionally provide an NVD API key to increase rate limits. This key is
+                    stored locally on the device using Android's encrypted DataStore and is
+                    <strong>never transmitted to Loogical or any third party</strong>.</p>
+            </div>
+
+            <!-- Permissions -->
+            <div class="policy-card">
+                <h2>Permissions</h2>
+                <ul>
+                    <li><strong>INTERNET</strong> — Required to download vulnerability data from the
+                        NVD API.</li>
+                    <li><strong>RECEIVE_BOOT_COMPLETED</strong> — Required to reschedule background
+                        sync tasks after a device restart.</li>
+                    <li><strong>POST_NOTIFICATIONS</strong> — Required (Android 13+) to show
+                        notifications about new high-severity vulnerabilities, if enabled by the
+                        user.</li>
+                </ul>
+            </div>
+
+            <!-- Children -->
+            <div class="policy-card">
+                <h2>Children's Privacy</h2>
+                <p>VulnScout is a technical security tool intended for adults and security
+                    professionals. It does not target nor knowingly collect any information from
+                    children under 13.</p>
+            </div>
+
+            <!-- Changes -->
+            <div class="policy-card">
+                <h2>Changes to This Policy</h2>
+                <p>If this policy is updated, the new version will be published at this URL with an
+                    updated effective date. Continued use of the application after any changes
+                    constitutes acceptance of the revised policy.</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="policy-card">
+                <h2>Contact</h2>
+                <p>For questions or concerns regarding this privacy policy, contact us at
+                    <a href="mailto:info@loogical.com"
+                        style="color: var(--accent-cyan);">info@loogical.com</a>.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-brand">Loogical</span>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/privacy.html">All Privacy Policies</a>
+            </div>
+            <span class="footer-copy">© 2026 Loogical. All rights reserved.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
